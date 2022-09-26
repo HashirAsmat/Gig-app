@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>CodeGig</title>
+</head>
+
+<body>
+  <header>
+    <h2><a href="/"><i class="fas fa-code"></i>
+        CodeGig</a></h2>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/gigs">All Gigs</a>
+        </li>
+        <li>
+          <a href="/gigs/add">Add Gig</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="search" class="search-wrap">
+    <h1>Find A Coding Gig</h1>
+    <form action="/gigs/search" class="search-form" method="GET">
+      <i class="fas fa-search"></i>
+      <input type="search" name="term" placeholder="Javascript, PHP, Rails, etc...">
+      <input type="submit" value="Search">
+    </form>
+  </section>
+
+
+
+<!-- this section can be use when we want to get data as req.body -->
+
+  <!-- <section id="search" class="search-wrap">
+  <form action="/gigs/search" method="POST">
+    <div class="input-group">
+      <br><br>
+      <input type="text" name="term" id="title" class="input-box" placeholder="eg. Small Wordpress website, React developer"
+       required>
+    </div>
+    <input type="submit" method="POST" value="search Gig" class="btn btn-reverse">
+  </form>
+</section> 
+   -->
+
+</body>
+
+</html>
